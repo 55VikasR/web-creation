@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KTM Traders</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>KTM Traders</h1>
+        <nav>
+            <ul>
+		<li><a href="#" onclick="homepage()">Home</a></li>
+                <li><a href="#" onclick="showOffers()">Offers</a></li>
+                <li><a href="#" onclick="orderNow()">Order Now</a></li>
+                <li><a href="#" onclick="showCart()">Cart</a></li>
+                <li><a href="#" onclick="showSupport()">Support</a></li>
+                <li><a href="#" onclick="trackOrder()">Track Order</a></li>
+                <li><a href="#" onclick="showAbout()">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home";>
+            <h2>Welcome to KTM Traders</h2>
+            <p>Explore our latest offers and place your order now....!
+	This is the only place where you can buy the FMCG goods in lower cost than any department store....DONT MISS THE CHANCE....!</p>
+	    <img src="image1.jpg" height=200 width=200> &emsp; <img src="image2.jpg" height=200 width=200> &emsp; <img src="image3.jpg" height=200 width=200> &emsp;<img src="image4.jpg" height=200 width=200> &emsp;<br>
+<img src="image5.png" height=200 width=200> &emsp; <img src="image6.png" height=200 width=200> &emsp; <img src="image7.jpg" height=200 width=200> &emsp;<img src="image8.jpg" height=200 width=200> &emsp;
+        </section>
+
+        <section id="offers" style="display: none;">
+            <h2>Latest Offers</h2>
+	    <h2><font size="5" color="red"><u><br><br>OFFERS ON SOAP</u></h2>
+<h3><font size="4" color="black">
+	    <ul>
+<li>LUX VELVET GLOW(Pack of 3) = RS.<s>133</s><b>120</b>/-only<br><br>
+<li>Pears Pure & Gentle Soap with Natural Oils 125 g (Buy 4 Get 1 Free) = Rs.<s>244</s><b>199/-</b>only<br><br>
+<li>Cinthol Lime Refreshing Deo Soap 150 g (Pack of 5) = RS.<s>197</s><b>180</b>/-only<br><br></h3>
+</ul>
+<br>
+<h2><font size="5" color="red"><u><br><br>OFFERS ON MASALA</u></h2>
+<h3><font size="4" color="black">
+<ul>
+<li>CHILLI CHICKEN MASALA 100GM = RS.<b>53</b>/-only<br><br>
+<li>IDLY CHILLI POWDER 100GM = Rs.<s>40</s><b>38/-</b>only<br><br>
+<li>KULAMBU CHILLY MASALA 100GM = RS.<s>40</s><b>38</b>/-only<br><br></h3>
+</ul>
+            <!-- Offer details can be displayed here -->
+        </section>
+
+        <section id="order-now" style="display: none;">
+            <h2>Order Now</h2>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Shopping List</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="grocerylist.js"></script>
+	<link rel="stylesheet" type="text/css" href="list.css">
+</head>
+<body>
+
+	<h1>Shopping List</h1>
+	<form action="add" method="get">
+		<label>Add Item: </label> 
+		<input type="text" name="item">
+		<input id="addNeed" type="submit" value="Need">
+		<input id="addHave" type="submit" value="Have">
+	</form>
+	<h2> Minimum of 10 Quantity: </h2>
+		<ul class='list'>
+			<li><input type="checkbox" name="item"> Aachi Briyani Kit <a href="#"></a></li>
+			<li><input type="checkbox" name="item"> Aachi Gulabjamun <a href="#"></a></li>
+			<li><input type="checkbox" name="item"> Nycil powder 150gm  <a href="#"></a></li>
+			<li><input type="checkbox" name="item"> Maxo mosquito coil <a href="#"></a></li>
+		</ul>	
+	<h2> No minimum quantity required: </h2>
+		<ul class='list'>
+			<li><input type="checkbox" name="item" checked> Aachi rasam powder <a href="#"></a></li>
+			<li><input type="checkbox" name="item" checked> Power AA Battery<a href="#"></a></li>
+			<li><input type="checkbox" name="item" checked> Dabur Honey 250gm <a href="#"></a></li>
+			<li><input type="checkbox" name="item" checked> Aachi pickle 90gm <a href="#"></a></li>
+		</ul>
+	
+</body>
+            <!-- Order form or product listings can be displayed here -->
+        </section>
+
+        <section id="cart" style="display: none;">
+            <h2>Shopping Cart</h2>
+<br>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Cart</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .cart-items {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 20px;
+        background-color: #fff;
+    }
+    .product {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+    .product-image {
+        float: left;
+        margin-right: 20px;
+    }
+    .product-info {
+        overflow: hidden;
+    }
+    .product-name {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .product-quantity {
+        color: #666;
+        margin-bottom: 5px;
+    }
+    .product-price {
+        font-size: 16px;
+        text-align:right;
+        color: #333;
+    }
+    .subtotal {
+        margin-top: 20px;
+        font-size: 18px;
+        text-align:right;
+    }
+    .place-order-btn {
+        margin-top: 20px;
+        background-color: #FF9800;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+	text-align:right;
+    }
+    .place-order-btn:hover {
+        background-color: #F57C00;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="cart-items">
+        <div class="product">
+            <div class="product-image">
+                <img src="lux.jpg" alt="Product 1"width="50" height="80">
+            </div>
+            <div class="product-info">
+                <div class="product-name">LUX VELVET GLOW(Pack of 3)</div>
+                <div class="product-quantity">Quantity: 1</div>
+                <div class="product-price">120</div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <img src="pears.jpg" alt="Product 2"width="50" height="80">
+            </div>
+            <div class="product-info">
+                <div class="product-name">Pears Pure & Gentle Soap with Natural Oils 125 g (Buy 4 Get 1 Free)</div>
+                <div class="product-quantity">Quantity: 1</div>
+                <div class="product-price">199</div>
+            </div>
+        </div>
+        <!-- Add more products here -->
+        <div class="subtotal">
+            <h3>Subtotal: 319</h3>
+        </div>
+        <button class="place-order-btn">Place Order</button>
+    </div>
+</div>
+
+</body>
+            <!-- Cart contents can be displayed here -->
+        </section>
+
+        <section id="support" style="display: none;">
+            <h2>Customer Support</h2>
+<dl>
+<dt><b>COMPANY NAME:</b><dd>KTM TRADERS<br><br>
+<dt><b>ADDRESS:</b><dd>436,SALEM MAIN ROAD,KOMARAPALAYAM.<br><br>
+<dt><b>PHONE:</b><dd>+91 9865753601<br><br>
+<dt><b>EMAIL:</b><dd>ktmtraders@gmail.com
+</dl>
+            <!-- Support contact details or form can be displayed here -->
+        </section>
+
+        <section id="track-order" style="display: none;">
+            <h2>Track Your Order</h2>
+BILL NO: <input type="text" name="0987654321" size="15"/> <br> <br>  
+<input type="submit" value="submit">  <br><br><br>
+<img src="track.jpg" width="600" height="350">
+            <!-- Order tracking form or information can be displayed here -->
+        </section>
+
+        <section id="about" style="display: none;">
+            <h2>About Us</h2>
+            <p>		We are maximisers.We are a leading retailer of consumer goods, providing high-quality products to our customers. We're out on our own journeys to maximise - be the best at what we choose and care about the most - whether it be our impact, voice, potential, ideas, influence, well-being or more. Because when we maximise ourselves in our inclusive teams, Flipkart is able to deliver the best imaginable value for our customers, stakeholders and the planet!</p><br>
+<h3>We Care</h3>
+<p>	Our culture of care extends to our people,
+stakeholders, customers and the planet! We do not
+believe in a one size fits all strategy. Our benefits and
+care policies are driven by empathy and customised
+to the unique needs of individual Flipsters. Because
+when Flipsters and their families are cared for, they
+can focus on doing their best work. We put your
+hopes, dreams and endeavours first - always.</p>
+            <!-- Information about the company can be displayed here -->
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
